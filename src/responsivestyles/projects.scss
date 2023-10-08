@@ -1,0 +1,73 @@
+@media only screen and (max-width:1080px) and (min-width:768px) {
+     .my-projects {
+          .project-box {
+               width: 95%;
+          }
+     }
+}
+
+@media only screen and (max-width:768px) and (min-width:498px) {
+     .activeMyProjectsDarkMode{.project-box {border: none !important;}}
+     .my-projects {
+          .project-box {
+               margin: 7rem auto !important;
+               flex-direction: column;
+               width: 95%;
+               border: none;
+               .content-area {
+                    margin: 5rem;
+                    .social22 {#github2, #codepen2 {font-size: 2.5rem;}}
+                    width: 100%;
+                    height: 170px;
+                    .title {font-size: 1rem;margin: 0; font-weight: bold;}
+                    .description {padding: 2rem;font-size: 0.9rem; width: 100%;}
+                    .equips {font-size: 0.7rem; #skill {font-size: 0.6rem;}}
+               }
+               .image{img {border-radius: 3px;width: 100%;} width: 45%;}
+          }
+     }
+}
+
+@media only screen and (max-width:498px) and (min-width:368px) {
+     .activeMyProjectsDarkMode{.project-box {border: none !important;}}
+     .my-projects {
+          .project-box {
+               margin: 7rem auto !important;
+               flex-direction: column;
+               width: 100%;
+               border: none;
+               .content-area {
+                    margin: 5rem;
+                    .social22 {#github2, #codepen2 {font-size: 2rem;}}
+                    width: 100%;
+                    height: 170px;
+                    .title {font-size: 1rem;margin: 0; font-weight: bold;}
+                    .description {padding: 1rem;font-size: 0.9rem; width: 100%;}
+                    .equips {font-size: 0.7rem; #skill {font-size: 0.6rem;}}
+               }
+               .image{img {border-radius: 3px;width: 100%;} width: 45%;}
+          }
+     }
+}
+
+@media only screen and (max-width:368px) and (min-width:168px) {
+     .activeMyProjectsDarkMode{.project-box {border: none !important;}}
+     .my-projects {
+          .project-box {
+               margin: 7rem auto !important;
+               flex-direction: column;
+               width: 100%;
+               border: none;
+               .content-area {
+                    margin: 5rem;
+                    .social22 {#github2, #codepen2 {font-size: 2rem;}}
+                    width: 100%;
+                    height: 170px;
+                    .title {font-size: 1rem;margin: 0; font-weight: bold;}
+                    .description {padding: 0.7rem;font-size: 0.8rem; width: 100%;height: 200px;}
+                    .equips {font-size: 0.7rem; #skill {font-size: 0.6rem;}}
+               }
+               .image{img {border-radius: 3px;width: 100%;} width:90%;}
+          }
+     }
+}

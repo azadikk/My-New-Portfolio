@@ -1,0 +1,85 @@
+@media only screen and (max-width:1080px) and (min-width:768px) {
+     .cv-container {
+          .cv {
+               width: 100%;
+               min-height: 140rem;
+          }
+     }
+ }
+
+
+ 
+ @media only screen and (max-width:768px) and (min-width:750px) {
+     .cv-container {
+          .cv {
+               width: 100%;
+               *{font-size: 0.9rem !important;}
+               .cv-header-area {
+                    .photo-name-area {.box, .box1 {width: 300px; height: 300px; h1 {font-size: 2rem !important;}}}
+                    .box1 {span {font-size: 2rem !important; margin-left: 3.6rem !important;}}
+               }
+               .summary {
+                    font-size: 0.8rem;
+               }
+          }
+     }
+ }
+ @media only screen and (max-width:750px) and (min-width:650px) {
+     .cv-container {
+          .cv {
+               width: 100%;
+               *{font-size: 0.8rem !important;}
+               .cv-header-area {
+                    .photo-name-area {.box, .box1 {width: 300px; height: 300px; h1 {font-size: 2rem !important;}}}
+                    .box1 {span {font-size: 2rem !important; margin-left: 3.6rem !important;}}
+               }
+               .summary {
+                    font-size: 0.8rem;
+               }
+          }
+     }
+ }
+
+ @media only screen and (max-width:650px) and (min-width:490px) {
+     .cv-container {
+          .cv {
+               width: 100%;
+               *{font-size: 0.73rem !important;}
+               .cv-header-area {
+                    .photo-name-area {.box, .box1 {width: 300px; height: 300px; h1 {font-size: 2rem !important;}}}
+                    .box1 {span {font-size: 2rem !important; margin-left: 3.6rem !important;}}
+               }
+               .summary {
+                    font-size: 0.8rem;
+               }
+          }
+     }
+ }
+
+ @media only screen and (max-width:490px) and (min-width:290px) {
+     .cv-container {
+          .cv {
+               .contact-area {
+                    flex-direction: column;
+               }
+               .photo-name-area {height: 300px !important;position: relative; bottom: 6rem;}
+               min-height: 160rem;
+               width: 100%;
+               *{font-size: 12px !important;}
+               .cv-header-area {
+                    .photo-name-area {.box, .box1 {width: 150px; height: 150px; h1 {font-size: 1.3rem !important;}}}
+                    .box1 {span {font-size: 1rem !important; margin-left: 1.4rem !important;}}
+               }
+               .summary {
+                    font-size: 0.8rem;
+                    display: none !important;
+               }
+               .right {display: none !important;}
+               .left {width: 100% !important;}
+          }
+     }
+ }
+
+ @media only screen and (max-width:368px) and (min-width:168px) {
+     
+ }

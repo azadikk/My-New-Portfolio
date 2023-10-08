@@ -1,0 +1,158 @@
+@import '../styles/global.scss';
+.my-projects {
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+
+     .project-box {
+          width: 75%;
+          height: 18rem;
+          margin: 2rem auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          box-shadow: 30px 0px 10px 0px rgba(73, 255, 134, 0.192);
+          .image {
+               width: 40%;
+               height: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               position: relative;
+               img {
+                    width: 100%;
+                    border-radius: 30px;
+                    transition: 0.3s ease-out;                    
+               }
+               #biggerImageIcon {
+                    color: mediumseagreen;
+                    position: absolute;
+                    font-size: 3.5rem;
+               }
+               img:hover {
+                    transform: scale(1.1);
+                    transform: translateX(-30px);
+                    box-shadow: 20px 20px 0px 0px rgba(123, 66, 255, 0.452);
+               }
+               
+               
+          }
+          .content-area {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               width: 60%;
+               height: 100%;
+               .title {
+                    margin-top: 1rem;
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+               }
+               .description {
+                    font-size: 1rem;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    padding: 2rem;
+                    width: 95%;
+                    height: 100%;
+                    .translateText {
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         width: 100%;
+                         height: 100%;
+                         select {
+                              font-size: 1rem;
+                              width: 100%;
+                              height: 2rem;
+                              border-radius: 5px;
+                              border: none;
+                              outline: none;
+                              box-shadow: 0px 0px 5px 0px rgba(6, 112, 41, 0.377);
+                              option {
+                                   color: #303030;
+                              }
+                         }
+                    }
+               }
+               .equips {
+                    width: 100%;
+                    height: 70px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    #techs {
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         padding: 0.1rem 2rem;
+                         color: white;
+                         font-weight: 500;
+                         border-radius: 5px;
+                         background-color: $global-header-color;
+                         #techicon {
+                              font-size: 1.3rem;
+                         }
+                    }
+                    #skill {
+                         cursor: not-allowed;
+                         user-select: none;
+                         color: rgb(20, 146, 75);
+                         font-size: 0.9rem;
+                         font-weight: bold;
+                         border-left: 8px solid $global-header-color;
+                         padding: 0.5rem 1rem;
+                         margin-bottom: 1.3rem;
+                    }
+               }
+
+
+                    #github2 {
+                         font-size: 1.5rem;
+                         color: #444040;
+                         transition: 0.3s ease-out;
+                    }
+                    #codepen2 {
+                         margin-left: 1rem;
+                         transition: 0.3s ease-out;
+                         font-size: 1.5rem;
+                         color: #444040;
+                    }
+                    #github2:hover {
+                         transform: rotate(360deg);
+                    }
+                    #codepen2:hover {
+                         transform: rotate(360deg);
+                    }
+               
+               
+          }
+     }
+}
+.activeMyProjectsDarkMode {
+     background-color: $dark-mode-cont;
+     .project-box {
+          box-shadow: none !important;
+          border: 1px solid #8d8d8d21 !important;
+          border-radius: 10px !important;
+          .title {color: $dark-mode-text;}
+          .description {color: $dark-mode-text;}
+          #github2 {color: $dark-mode-text;}
+          #codepen2 {color: $dark-mode-text;}
+          #skill {color: rgb(150, 255, 150) !important;}
+          .image >img:hover {
+               box-shadow: none !important;
+          }
+     }
+}
